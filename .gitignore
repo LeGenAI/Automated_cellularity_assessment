@@ -1,0 +1,105 @@
+# ===================================
+# CRITICAL: NEVER COMMIT DATASETS
+# ===================================
+# Raw data directories - PROTECTED
+data/
+Dataset*/
+proper_cellularity_results/
+test/
+
+# Original images and patient data - PROTECTED
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.svs
+*.ndpi
+*.dcm
+
+# Analysis results with patient data - PROTECTED
+*_Full_Analysis/
+*_analysis/
+*/BC_*/
+
+# ===================================
+# Python
+# ===================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===================================
+# IDEs and Editors
+# ===================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.claude/
+
+# ===================================
+# Jupyter Notebooks
+# ===================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ===================================
+# LaTeX
+# ===================================
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf
+!Figure/*.pdf
+
+# ===================================
+# Temporary files
+# ===================================
+tmp/
+temp/
+*.tmp
+*.bak
+
+# ===================================
+# Documentation and Manuscript
+# ===================================
+guideline.txt
+main.tex
+*.tex
+
+# ===================================
+# Internal Scripts (not for public)
+# ===================================
+convert_labels_to_binary.py
+
+# ===================================
+# Large Model Files (too large for GitHub)
+# ===================================
+checkpoints/*.pth
+checkpoints/*.tar.gz
+
+# ===================================
+# External Frameworks (installed separately)
+# ===================================
+nnUNet/
+!custom_scripts/
