@@ -1,0 +1,251 @@
+{
+  "comparisons": [
+    {
+      "sample_name": "BP25",
+      "prediction_cellularity": 75.0026051844895,
+      "gt_cellularity": 75.22740362879966,
+      "absolute_difference": -0.22479844431016716,
+      "relative_difference_percent": -0.29882520659546796,
+      "prediction_stats": {
+        "cellularity_percentage": 75.0026051844895,
+        "total_cell_pixels": 15085304,
+        "hematopoietic_pixels": 11314371,
+        "adipocyte_pixels": 3770933,
+        "adipocyte_ratio": 0.24997394815510512,
+        "adipocyte_threshold": 236,
+        "cell_coverage_percentage": 48.39526181918566
+      },
+      "gt_stats": {
+        "cellularity_percentage": 75.22740362879966,
+        "total_cell_pixels": 13853231,
+        "hematopoietic_pixels": 10421426,
+        "adipocyte_pixels": 3431805,
+        "adipocyte_ratio": 0.24772596371200337,
+        "adipocyte_threshold": 222,
+        "cell_coverage_percentage": 44.44264041922252
+      }
+    },
+    {
+      "sample_name": "BP31",
+      "prediction_cellularity": 75.34167749450043,
+      "gt_cellularity": 75.20720008920134,
+      "absolute_difference": 0.13447740529909424,
+      "relative_difference_percent": 0.1788092165904249,
+      "prediction_stats": {
+        "cellularity_percentage": 75.34167749450043,
+        "total_cell_pixels": 10216725,
+        "hematopoietic_pixels": 7697452,
+        "adipocyte_pixels": 2519273,
+        "adipocyte_ratio": 0.2465832250549956,
+        "adipocyte_threshold": 189,
+        "cell_coverage_percentage": 32.01550836994466
+      },
+      "gt_stats": {
+        "cellularity_percentage": 75.20720008920134,
+        "total_cell_pixels": 11578301,
+        "hematopoietic_pixels": 8707716,
+        "adipocyte_pixels": 2870585,
+        "adipocyte_ratio": 0.24792799910798657,
+        "adipocyte_threshold": 180,
+        "cell_coverage_percentage": 36.28219342061557
+      }
+    },
+    {
+      "sample_name": "BP1",
+      "prediction_cellularity": 35.576419314917324,
+      "gt_cellularity": 35.72965414494671,
+      "absolute_difference": -0.15323483002938332,
+      "relative_difference_percent": -0.4288729731548648,
+      "prediction_stats": {
+        "cellularity_percentage": 35.576419314917324,
+        "total_cell_pixels": 6445733,
+        "hematopoietic_pixels": 2293161,
+        "adipocyte_pixels": 4152572,
+        "adipocyte_ratio": 0.6442358068508267,
+        "adipocyte_threshold": 240,
+        "cell_coverage_percentage": 33.201993046866455
+      },
+      "gt_stats": {
+        "cellularity_percentage": 35.72965414494671,
+        "total_cell_pixels": 6228910,
+        "hematopoietic_pixels": 2225568,
+        "adipocyte_pixels": 4003342,
+        "adipocyte_ratio": 0.6427034585505329,
+        "adipocyte_threshold": 240,
+        "cell_coverage_percentage": 32.085137021585744
+      }
+    },
+    {
+      "sample_name": "BP7",
+      "prediction_cellularity": 37.47723996521363,
+      "gt_cellularity": 37.255616668242034,
+      "absolute_difference": 0.22162329697159322,
+      "relative_difference_percent": 0.5948721744297754,
+      "prediction_stats": {
+        "cellularity_percentage": 37.47723996521363,
+        "total_cell_pixels": 8099724,
+        "hematopoietic_pixels": 3035553,
+        "adipocyte_pixels": 5064171,
+        "adipocyte_ratio": 0.6252276003478637,
+        "adipocyte_threshold": 240,
+        "cell_coverage_percentage": 26.80911507873791
+      },
+      "gt_stats": {
+        "cellularity_percentage": 37.255616668242034,
+        "total_cell_pixels": 8611778,
+        "hematopoietic_pixels": 3208371,
+        "adipocyte_pixels": 5403407,
+        "adipocyte_ratio": 0.6274438333175797,
+        "adipocyte_threshold": 240,
+        "cell_coverage_percentage": 28.503952410544287
+      }
+    },
+    {
+      "sample_name": "H2",
+      "prediction_cellularity": 42.07712195058132,
+      "gt_cellularity": 40.210352745919515,
+      "absolute_difference": 1.8667692046618072,
+      "relative_difference_percent": 4.642508899281526,
+      "prediction_stats": {
+        "cellularity_percentage": 42.07712195058132,
+        "total_cell_pixels": 6955711,
+        "hematopoietic_pixels": 2926763,
+        "adipocyte_pixels": 4028948,
+        "adipocyte_ratio": 0.5792287804941867,
+        "adipocyte_threshold": 240,
+        "cell_coverage_percentage": 24.111588325013866
+      },
+      "gt_stats": {
+        "cellularity_percentage": 40.210352745919515,
+        "total_cell_pixels": 7613497,
+        "hematopoietic_pixels": 3061414,
+        "adipocyte_pixels": 4552083,
+        "adipocyte_ratio": 0.5978964725408048,
+        "adipocyte_threshold": 240,
+        "cell_coverage_percentage": 26.391767193566277
+      }
+    },
+    {
+      "sample_name": "H6",
+      "prediction_cellularity": 46.6074032604519,
+      "gt_cellularity": 49.349086471945554,
+      "absolute_difference": -2.741683211493651,
+      "relative_difference_percent": -5.55569192360282,
+      "prediction_stats": {
+        "cellularity_percentage": 46.6074032604519,
+        "total_cell_pixels": 5080032,
+        "hematopoietic_pixels": 2367671,
+        "adipocyte_pixels": 2712361,
+        "adipocyte_ratio": 0.5339259673954809,
+        "adipocyte_threshold": 240,
+        "cell_coverage_percentage": 36.515468660149516
+      },
+      "gt_stats": {
+        "cellularity_percentage": 49.349086471945554,
+        "total_cell_pixels": 4286130,
+        "hematopoietic_pixels": 2115166,
+        "adipocyte_pixels": 2170964,
+        "adipocyte_ratio": 0.5065091352805444,
+        "adipocyte_threshold": 240,
+        "cell_coverage_percentage": 30.808870040253016
+      }
+    }
+  ],
+  "statistical_summary": {
+    "n_samples": 6,
+    "gt_cellularity": {
+      "mean": 52.1632189581758,
+      "std": 16.862535849881812,
+      "median": 44.77971960893254,
+      "range": [
+        35.72965414494671,
+        75.22740362879966
+      ]
+    },
+    "pred_cellularity": {
+      "mean": 52.01374452835902,
+      "std": 16.74385852576421,
+      "median": 44.34226260551661,
+      "range": [
+        35.576419314917324,
+        75.34167749450043
+      ]
+    },
+    "absolute_difference": {
+      "mean": -0.1494744298167845,
+      "std": 1.3545488041312528,
+      "median": -0.009378712365144537,
+      "range": [
+        -2.741683211493651,
+        1.8667692046618072
+      ],
+      "ci_95": [
+        -1.7066625772343722,
+        1.4077137176008032
+      ]
+    },
+    "relative_difference": {
+      "mean": -0.14453330217523774,
+      "std": 2.9707556992656405,
+      "median": -0.06000799500252153,
+      "range": [
+        -5.55569192360282,
+        4.642508899281526
+      ],
+      "ci_95": [
+        -3.559711514773218,
+        3.2706449104227424
+      ]
+    },
+    "statistical_tests": {
+      "paired_t_test": {
+        "t_statistic": -0.24675005060649327,
+        "p_value": 0.814912414064106,
+        "significant": "False"
+      },
+      "pearson_correlation": {
+        "r": 0.9967757085224739,
+        "p_value": 1.5577323341444348e-05,
+        "r_squared": 0.9935618131004799
+      }
+    }
+  },
+  "category_analysis": {
+    "high": {
+      "description": "High cellularity (>30% GT coverage)",
+      "n_samples": 2,
+      "samples": [
+        "BP25",
+        "BP31"
+      ],
+      "gt_mean": 75.2173018590005,
+      "pred_mean": 75.17214133949497,
+      "mean_difference": -0.045160519505536456,
+      "std_difference": 0.1796379248046307
+    },
+    "medium": {
+      "description": "Medium cellularity (25-35% GT coverage)",
+      "n_samples": 2,
+      "samples": [
+        "BP1",
+        "BP7"
+      ],
+      "gt_mean": 36.492635406594374,
+      "pred_mean": 36.52682964006547,
+      "mean_difference": 0.03419423347110495,
+      "std_difference": 0.18742906350048827
+    },
+    "low": {
+      "description": "Low cellularity (<25% GT coverage)",
+      "n_samples": 2,
+      "samples": [
+        "H2",
+        "H6"
+      ],
+      "gt_mean": 44.77971960893254,
+      "pred_mean": 44.34226260551661,
+      "mean_difference": -0.437457003415922,
+      "std_difference": 2.304226208077729
+    }
+  }
+}

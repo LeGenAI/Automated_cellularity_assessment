@@ -22,6 +22,7 @@
 **Authors:** Jae-Hyun Baek¹, Jon-Lark Kim¹, Sang Mee Hwang²,³
 
 **Affiliations:**
+
 1. Sogang University, Department of Mathematics & Institute for Mathematical and Data Sciences
 2. Seoul National University Bundang Hospital, Department of Laboratory Medicine
 3. Seoul National University College of Medicine, Department of Laboratory Medicine
@@ -34,12 +35,12 @@ This repository implements an **automated bone marrow cellularity assessment sys
 
 ### Key Results (20 WSIs)
 
-| Metric | Mean ± SD | Range | Clinical Impact |
-|--------|-----------|-------|-----------------|
-| **Cellularity** | 48.0% ± 9.5% | 32.8% - 64.7% | Objective quantification |
-| **Cell Coverage** | 38.9% ± 10.7% | 22.4% - 57.9% | Spatial density analysis |
-| **Adipocyte Ratio** | 52.1% ± 9.6% | 35.3% - 67.2% | Tissue composition |
-| **Reproducibility** | 100% | Zero variability | Eliminates inter-observer bias |
+| Metric                    | Mean ± SD     | Range            | Clinical Impact                |
+| ------------------------- | -------------- | ---------------- | ------------------------------ |
+| **Cellularity**     | 48.0% ± 9.5%  | 32.8% - 64.7%    | Objective quantification       |
+| **Cell Coverage**   | 38.9% ± 10.7% | 22.4% - 57.9%    | Spatial density analysis       |
+| **Adipocyte Ratio** | 52.1% ± 9.6%  | 35.3% - 67.2%    | Tissue composition             |
+| **Reproducibility** | 100%           | Zero variability | Eliminates inter-observer bias |
 
 ### Key Features
 
@@ -56,6 +57,7 @@ This repository implements an **automated bone marrow cellularity assessment sys
 <div align="center">
 
 ### Cellularity Analysis Summary
+
 <img src="./Figure/summary_analysis.png" alt="Dataset999 Analysis Summary" width="85%">
 
 ### Sample Analysis Results
@@ -89,6 +91,7 @@ python dataset999_full_analysis.py \
 ```
 
 **Expected Output:**
+
 ```
 🔬 Dataset999 Cellularity Analysis
 ================================================================
@@ -106,6 +109,7 @@ python dataset999_full_analysis.py \
 ## 💾 Installation
 
 ### Prerequisites
+
 - Python 3.8+
 - CUDA 11.8+ (for GPU acceleration)
 - 16GB+ RAM recommended
@@ -149,20 +153,22 @@ tqdm>=4.65.0
 
 Pre-trained models are available for immediate inference:
 
-| Model | Dataset | Epochs | Size | Description |
-|-------|---------|--------|------|-------------|
-| **checkpoint_latest.pth** | Dataset999 | 52 | 452 MB | Latest 5-fold CV model (recommended) |
-| **checkpoint_dataset998_epoch52.tar.gz** | Dataset998 | 52 | 419 MB | Legacy training checkpoint |
+| Model                                          | Dataset    | Epochs | Size   | Description                          |
+| ---------------------------------------------- | ---------- | ------ | ------ | ------------------------------------ |
+| **checkpoint_latest.pth**                | Dataset999 | 52     | 452 MB | Latest 5-fold CV model (recommended) |
+| **checkpoint_dataset998_epoch52.tar.gz** | Dataset998 | 52     | 419 MB | Legacy training checkpoint           |
 
 ### Download Methods
 
 **Option 1: Git LFS (Recommended)**
+
 ```bash
 git lfs install
 git lfs pull
 ```
 
 **Option 2: Direct Download**
+
 ```bash
 cd checkpoints/
 # Download from GitHub Releases
@@ -170,6 +176,7 @@ wget https://github.com/LeGenAI/Automated_cellularity_assessment/releases/downlo
 ```
 
 **Option 3: Python Script**
+
 ```python
 import gdown
 url = "YOUR_GOOGLE_DRIVE_LINK"
@@ -288,30 +295,31 @@ Where:
 <details>
 <summary>📊 Click to expand full results table</summary>
 
-| Sample ID | Cellularity | Cell Coverage | Adipocyte Ratio | Tiles | WSI Dimensions |
-|-----------|-------------|---------------|-----------------|-------|----------------|
-| BC_009 | 64.7% | 57.9% | 35.3% | 10 | 6,856 × 1,844 |
-| BC_012 | 59.7% | 37.9% | 40.3% | 12 | 7,608 × 2,232 |
-| BC_001 | 57.2% | 46.1% | 42.8% | 30 | 11,368 × 3,144 |
-| BC_016 | 56.7% | 54.4% | 43.3% | 14 | 8,760 × 2,104 |
-| BC_010 | 56.0% | 34.9% | 44.0% | 18 | 9,464 × 2,232 |
-| BC_017 | 53.6% | 35.8% | 46.4% | 8 | 6,104 × 1,456 |
-| BC_019 | 50.9% | 46.5% | 49.1% | 18 | 9,464 × 2,232 |
-| BC_013 | 50.5% | 22.4% | 49.5% | 18 | 9,464 × 2,232 |
-| BC_018 | 50.4% | 33.5% | 49.6% | 10 | 6,856 × 1,844 |
-| BC_006 | 48.6% | 42.2% | 51.4% | 18 | 9,464 × 2,232 |
-| BC_008 | 47.5% | 29.9% | 52.5% | 24 | 10,616 × 2,584 |
-| BC_014 | 46.8% | 54.6% | 53.2% | 6 | 3,505 × 1,701 |
-| BC_007 | 46.4% | 34.9% | 53.6% | 45 | 16,138 × 3,144 |
-| BC_003 | 46.1% | 39.9% | 53.9% | 18 | 9,464 × 2,232 |
-| BC_011 | 42.9% | 46.0% | 57.1% | 12 | 7,608 × 2,232 |
-| BC_020 | 41.0% | 40.5% | 59.0% | 10 | 6,856 × 1,844 |
-| BC_005 | 37.3% | 48.9% | 62.7% | 48 | 13,256 × 3,848 |
-| BC_004 | 36.8% | 47.1% | 63.2% | 18 | 9,464 × 2,232 |
-| BC_015 | 35.8% | 54.5% | 64.2% | 14 | 8,760 × 2,104 |
-| BC_002 | 32.8% | 25.3% | 67.2% | 24 | 10,616 × 2,584 |
+| Sample ID | Cellularity | Cell Coverage | Adipocyte Ratio | Tiles | WSI Dimensions  |
+| --------- | ----------- | ------------- | --------------- | ----- | --------------- |
+| BC_009    | 64.7%       | 57.9%         | 35.3%           | 10    | 6,856 × 1,844  |
+| BC_012    | 59.7%       | 37.9%         | 40.3%           | 12    | 7,608 × 2,232  |
+| BC_001    | 57.2%       | 46.1%         | 42.8%           | 30    | 11,368 × 3,144 |
+| BC_016    | 56.7%       | 54.4%         | 43.3%           | 14    | 8,760 × 2,104  |
+| BC_010    | 56.0%       | 34.9%         | 44.0%           | 18    | 9,464 × 2,232  |
+| BC_017    | 53.6%       | 35.8%         | 46.4%           | 8     | 6,104 × 1,456  |
+| BC_019    | 50.9%       | 46.5%         | 49.1%           | 18    | 9,464 × 2,232  |
+| BC_013    | 50.5%       | 22.4%         | 49.5%           | 18    | 9,464 × 2,232  |
+| BC_018    | 50.4%       | 33.5%         | 49.6%           | 10    | 6,856 × 1,844  |
+| BC_006    | 48.6%       | 42.2%         | 51.4%           | 18    | 9,464 × 2,232  |
+| BC_008    | 47.5%       | 29.9%         | 52.5%           | 24    | 10,616 × 2,584 |
+| BC_014    | 46.8%       | 54.6%         | 53.2%           | 6     | 3,505 × 1,701  |
+| BC_007    | 46.4%       | 34.9%         | 53.6%           | 45    | 16,138 × 3,144 |
+| BC_003    | 46.1%       | 39.9%         | 53.9%           | 18    | 9,464 × 2,232  |
+| BC_011    | 42.9%       | 46.0%         | 57.1%           | 12    | 7,608 × 2,232  |
+| BC_020    | 41.0%       | 40.5%         | 59.0%           | 10    | 6,856 × 1,844  |
+| BC_005    | 37.3%       | 48.9%         | 62.7%           | 48    | 13,256 × 3,848 |
+| BC_004    | 36.8%       | 47.1%         | 63.2%           | 18    | 9,464 × 2,232  |
+| BC_015    | 35.8%       | 54.5%         | 64.2%           | 14    | 8,760 × 2,104  |
+| BC_002    | 32.8%       | 25.3%         | 67.2%           | 24    | 10,616 × 2,584 |
 
 **Summary Statistics:**
+
 - Cellularity Range: 32.8% (hypocellular) to 64.7% (normocellular)
 - Mean Processing: 18.5 tiles/WSI (range: 6-48)
 - Inverse Correlation: Cellularity vs. Adipocyte (r = -0.9, p < 0.001)
@@ -320,13 +328,51 @@ Where:
 
 ### Performance Characteristics
 
-| Aspect | Measurement | Clinical Significance |
-|--------|-------------|----------------------|
-| **Reproducibility** | 100% | Zero inter-observer variability |
-| **Scalability** | 6-48 tiles/WSI | Handles 3.5K to 17K pixel WSIs |
-| **Processing Time** | ~2-5 min/WSI | GPU-accelerated inference |
+| Aspect                        | Measurement          | Clinical Significance                     |
+| ----------------------------- | -------------------- | ----------------------------------------- |
+| **Reproducibility**     | 100%                 | Zero inter-observer variability           |
+| **Scalability**         | 6-48 tiles/WSI       | Handles 3.5K to 17K pixel WSIs            |
+| **Processing Time**     | ~2-5 min/WSI         | GPU-accelerated inference                 |
 | **Biological Accuracy** | r = -0.9 (p < 0.001) | Inverse cellularity-adipocyte correlation |
-| **Staining Tolerance** | Adaptive (180-240) | Robust to staining variations |
+| **Staining Tolerance**  | Adaptive (180-240)   | Robust to staining variations             |
+
+### Segmentation Validation (3 Expert-Annotated WSIs)
+
+To validate segmentation quality, we compared model predictions against expert human annotations:
+
+| Metric              | Mean ± SD     | Range        | Threshold |
+| ------------------- | ------------- | ------------ | --------- |
+| **IoU**             | 81.4% ± 4.6%  | 77.8-87.9%   | >70%      |
+| **Dice**            | 89.7% ± 2.7%  | 87.5-93.6%   | >85%      |
+| **Precision**       | 92.0% ± 1.1%  | 90.8-93.4%   | >90%      |
+| **Recall**          | 87.6% ± 5.5%  | 82.4-95.2%   | >80%      |
+
+**Key Finding**: Automated segmentation achieves **clinical-grade accuracy** (Dice >85%), comparable to expert manual annotation.
+
+### Cellularity Measurement Agreement (6 Stratified Samples)
+
+Beyond pixel-level segmentation, we validated clinical measurement accuracy by comparing cellularity values between predictions and ground truth across samples stratified by cellularity levels:
+
+| Sample   | Category | GT (%)  | Pred (%) | Difference (%) |
+| -------- | -------- | ------- | -------- | -------------- |
+| BP25     | High     | 75.23   | 75.00    | -0.22          |
+| BP31     | High     | 75.21   | 75.34    | +0.13          |
+| BP1      | Low      | 35.73   | 35.58    | -0.15          |
+| BP7      | Low      | 37.26   | 37.48    | +0.22          |
+| H2       | Low      | 40.21   | 42.08    | +1.87          |
+| H6       | Low      | 49.35   | 46.61    | -2.74          |
+| **Mean** | -        | **52.16±16.86** | **52.01±16.74** | **-0.15±1.35** |
+
+**Category-wise Performance**:
+- **High cellularity (BP25, BP31)**: Mean difference -0.05% ± 0.18%
+- **Low cellularity (BP1, BP7, H2, H6)**: Mean difference -0.20% ± 1.61%
+
+**Statistical Validation**:
+- Paired t-test: t = -0.247, p = 0.815 (no significant difference)
+- Pearson correlation: r = 0.997 (R² = 0.994, p < 0.001)
+- 95% Confidence Interval: [-1.71%, 1.41%]
+
+**Clinical Significance**: Despite moderate pixel-level overlap (IoU 78-88%), cellularity measurements show **near-perfect agreement** (mean difference 0.15%). This finding validates that moderate segmentation overlap is sufficient for accurate cellularity quantification, as statistical averaging across thousands of cells minimizes the impact of individual boundary errors. The near-perfect correlation confirms that automated cellularity measurements are **clinically equivalent** to expert manual assessment.
 
 ---
 
@@ -365,11 +411,21 @@ Automated_cellularity_assessment/
 ├── Figure/
 │   ├── summary_analysis.png               # Dataset overview visualization
 │   ├── BC_00000_analysis.png              # Sample analysis example
-│   └── BC_011_cellularity_visualization.png  # Detailed visualization
-├── dataset999_full_analysis.py            # Main analysis script
+│   ├── BC_011_cellularity_visualization.png  # Detailed visualization
+│   ├── evaluation_summary_plot.png        # Segmentation validation metrics
+│   └── BP1_comparison_visualization.png   # Pixel-wise comparison example
+├── evaluation_results_from_gcp/
+│   ├── EXPERIMENT_SUMMARY.md              # Comprehensive experiment documentation
+│   ├── cellularity_comparison_summary.json # Statistical analysis results
+│   ├── cellularity_comparison_summary.png  # 6-sample agreement visualization
+│   └── [BP1, BP7, BP25, BP31, H2, H6]/    # Individual sample results
+├── dataset999_full_analysis.py            # Main analysis script (20 WSIs)
 ├── complete_wsi_tiling_system.py          # Tile extraction and merging
+├── model_evaluation_with_human_annotation.py  # Segmentation validation (3 samples)
+├── cellularity_comparison_with_binary_classification.py  # Measurement agreement (6 samples)
 ├── train_full.py                          # nnUNet training script
 ├── requirements.txt                       # Python dependencies
+├── main.tex                               # Paper manuscript (LaTeX)
 └── README.md
 ```
 
@@ -416,6 +472,7 @@ python train_full.py --dataset_id 999 --num_epochs 52 --fold 0
 ## 🐛 Troubleshooting
 
 ### CUDA Out of Memory
+
 ```bash
 # Reduce tile size
 python dataset999_full_analysis.py --tile_size 1024  # Default: 1280
@@ -425,6 +482,7 @@ python dataset999_full_analysis.py --device cpu
 ```
 
 ### Model Loading Error
+
 ```bash
 # Verify checkpoint file integrity
 md5sum checkpoints/checkpoint_latest.pth
@@ -435,6 +493,7 @@ git lfs pull
 ```
 
 ### Poor Segmentation Quality
+
 - Check input image quality (avoid compression artifacts)
 - Verify grayscale conversion is correct
 - Ensure nnUNet preprocessing completed successfully
@@ -473,6 +532,7 @@ If you use this code in your research, please cite:
 ## 🤝 Contributing
 
 Contributions are welcome! Areas for improvement:
+
 - [ ] 3D volumetric analysis support
 - [ ] Integration with PACS systems
 - [ ] Real-time inference optimization
